@@ -777,6 +777,15 @@ img#wpstats {
         width: 95%;
         }
         
+    #branding {
+        height: 100%;
+    }
+    
+    #branding img {
+        width: 100%;
+        height: auto;
+    }
+        
     #primary,
     #secondary {
     float: none;
