@@ -107,7 +107,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #container {
 	float: left;
-	margin: 0 -300px 0 0;
+	margin: 0 -300px 1.5em 0;
 	width: 100%;
 }
 #content {
@@ -792,6 +792,7 @@ img#wpstats {
         float: none;
         clear: both;
         width: 100%;
+        margin-right: 0px;
         }
     #primary {
         margin-top: 6em;
