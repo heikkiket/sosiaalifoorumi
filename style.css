@@ -792,8 +792,10 @@ img#wpstats {
         float: none;
         clear: both;
         width: 100%;
-        margin-right: 0px;
         }
+    .xoxo {
+        margin-left: 20px;
+    }
     #primary {
         margin-top: 6em;
     }
