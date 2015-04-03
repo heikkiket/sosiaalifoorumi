@@ -5,10 +5,11 @@ Author: Heikki Ketoharju
 Author URI: http://heikki.ketoharju.info/wordpress
 Description: Twenty Ten -teeman päälle rakennettu Suomen Sosiaalifoorumin uusi ulkoasu. Teemassa on kuusi vimpainaluetta: kaksi sivupalkissa ja neljä alapalkissa. Otsakekuva on helppo vaihtaa, ja muu ulkoasu sopeutuu kulloinkin valittuun otsakkeeseen. Teemaa on helppo päivittää ja laajentaa.
 Template: twentyten
-Version: 1.0
+Version: 1.1
 License: GNU General Public License
 License URI: license.txt
 Tags: light, white, two-columns, left-sidebar, flexible-width, microformats, custom-header, custom-menu, editor-style, featured-images, sticky-post, theme-options, threaded-comments
+Text Domain: sosiaalifoorumi-2013
 */
 
 @import url("twentyten-menu.css");

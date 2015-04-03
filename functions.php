@@ -1,5 +1,8 @@
 <?php
 
+//Lisätään mahdollisuudet teeman muokkaamiseen
+require_once('class-customize_theme.php');
+
 //Otsakekuvan korkeus on 180 pikseliä, mutta Twenty Tenissä asetus on eri. Tällä homma hoituu!
 function sosiaalifoorumi_header_image_height($height) {
 	$height="180";
