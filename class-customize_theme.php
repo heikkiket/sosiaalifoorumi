@@ -75,8 +75,8 @@ class sosiaalifoorumi_Customize {
       ?>
       <!--Customizer CSS--> 
       <style type="text/css">
-           <?php self::generate_css('#access li:hover a', 'background', 'menu_highlight_color'); ?>
-           <?php self::generate_css('#access ul ul li:hover a', 'background', 'menu_highlight_color'); ?>
+           <?php self::generate_css('#access li:hover > a', 'background', 'menu_highlight_color'); ?>
+           <?php self::generate_css('#access ul ul li:hover > a', 'background', 'menu_highlight_color'); ?>
            <?php self::generate_css('a:link', 'color', 'highlight_color'); ?>
            <?php self::generate_css('a:hover', 'color', 'menu_highlight_color'); ?>
       </style> 
