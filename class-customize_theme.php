@@ -36,6 +36,14 @@ class sosiaalifoorumi_Customize {
             'transport' => 'refresh', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
          ) 
       );   
+      
+      $wp_customize->add_setting( 'menu_bg_color',
+         array(
+            'default' => '#dedede', //Default setting/value to save
+            'type' => 'theme_mod', //Is this an 'option' or a 'theme_mod'?
+            'transport' => 'refresh', //What triggers a refresh of the setting? 'refresh' or 'postMessage' (instant)?
+         ) 
+      );   
             
       //Finally, we define the control itself (which links a setting to a section and renders the HTML controls)...
       $wp_customize->add_control( new WP_Customize_Color_Control( //Instantiate the color control class
@@ -48,7 +56,17 @@ class sosiaalifoorumi_Customize {
             'priority' => 10, //Determines the order this control appears in for the specified section
          ) 
       ) );
-      
+
+      $wp_customize->add_control( new WP_Customize_Color_Control(
+         $wp_customize, 
+         'sosiaalifoorumi_menu_bg_color',
+         array(
+            'label' => __( 'Valikon taustaväri', 'sosiaalifoorumi-2013' ),
+            'section' => 'colors',
+            'settings' => 'menu_bg_color',
+            'priority' => 13,
+         ) 
+      ) );
       
       $wp_customize->add_control( new WP_Customize_Color_Control(
          $wp_customize, 
@@ -57,7 +75,7 @@ class sosiaalifoorumi_Customize {
             'label' => __( 'Valikon ja linkkien korostusväri', 'sosiaalifoorumi-2013' ),
             'section' => 'colors',
             'settings' => 'menu_highlight_color',
-            'priority' => 11,
+            'priority' => 15,
          ) 
       ) );
 
@@ -79,6 +97,7 @@ class sosiaalifoorumi_Customize {
            <?php self::generate_css('#access ul ul li:hover > a', 'background', 'menu_highlight_color'); ?>
            <?php self::generate_css('a:link', 'color', 'highlight_color'); ?>
            <?php self::generate_css('a:hover', 'color', 'menu_highlight_color'); ?>
+           <?php self::generate_css('#access', 'background', 'menu_bg_color'); ?>
       </style> 
       <!--/Customizer CSS-->
       <?php
